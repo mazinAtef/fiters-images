@@ -117,6 +117,14 @@ void loadImage2() {
     strcat(imageFileName, ".bmp");
     readGSBMP(imageFileName, image2);
 }
+
+
+
+
+
+
+
+
 void black_and_white(){
     loadImage();
     for (int i = 0; i < 256; i++) {
@@ -127,6 +135,9 @@ void black_and_white(){
         }
     }
 }
+
+
+
 void saveImage() {
     char imageFileName[100];
     // Get gray scale image target file name
@@ -136,6 +147,12 @@ void saveImage() {
     strcat(imageFileName, ".bmp");
     writeGSBMP(imageFileName, image);
 }
+
+
+
+
+
+
 void flipimage() {
     loadImage();
     for (int i = 0; i < 128; i++) {
@@ -158,6 +175,9 @@ void merge_images(){
         }
     }
 }
+
+
+
 void Invert_Filter(){
     loadImage();
     for (int i = 0; i < 255; i++) {
@@ -166,6 +186,16 @@ void Invert_Filter(){
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
 void dark_light(){
     int x;
     loadImage();
@@ -273,6 +303,9 @@ void edges(){
         }
     }
 }
+
+
+
 void enlarge(){
     loadImage();
     for (int i = 0; i < 128; i++) {
@@ -295,6 +328,10 @@ void enlarge(){
     }
 
 }
+
+
+
+
 void shrink(){
     int x;
     loadImage();
@@ -417,6 +454,10 @@ void BlurImage() {
         }
     }
 }
+
+
+
+
 void ShuffleImage() {
     loadImage();
 loop:
@@ -558,6 +599,15 @@ loop:
         }
     }
 }
+
+
+
+
+
+
+
+
+
 void menu() {
 
     cout << "Enter your choice:";
